@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ember First</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    
+    <body>
+        <script type="text/x-handlebars" id="first-route">
+            <h1 {{action 'headerClicked'}}>Dice Roller</h1>
+              <p> {{firstname}} </p>
+              <p> {{lastname}} </p>
+             {{outlet}}
+        </script>        
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="handlebars.js"></script>
+        <script type="text/javascript" src="ember-template-compiler.js"></script>
+        <script type="text/javascript" src="ember.debug.js"></script>
+        <script type="text/javascript" src="ember.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>

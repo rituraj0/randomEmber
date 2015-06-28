@@ -7,9 +7,12 @@
     
     <body>
         <script type="text/x-handlebars" id="first-route">
-            <h1 {{action 'headerClicked'}}>Dice Roller</h1>
-              <p> {{firstname}} </p>
-              <p> {{lastname}} </p>
+            <h1> Enter Number  of dic to be rolled</h1><br>
+              <p> {{dicenum}} </p><br>
+              <p> {{input value=dicenum }} </p>
+              {{#each outputs as |item|}}
+                <li>{{item}}</li>
+              {{/each}}
              {{outlet}}
         </script>        
         <script type="text/javascript" src="jquery.js"></script>
